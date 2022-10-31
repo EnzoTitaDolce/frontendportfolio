@@ -1,0 +1,10 @@
+body{
+    /*border:1px solid black;*/
+    border-radius:1rem;
+    box-shadow: 1px 1px 10px 1px rgb(0, 44, 65);
+    background-color: rgb(124, 122, 122);
+}
+#contenido{
+    padding:0.5rem 2rem;
+    color:white;
+}

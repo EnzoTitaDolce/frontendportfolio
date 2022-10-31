@@ -1,0 +1,25 @@
+<body>
+    <div id="principal" class="row" *ngIf="misDatos">
+        <div id="contenido" class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="titulo" id="titulo"><h2>Habilidades</h2><img [src]="misDatos.imagenes.agregar" class="imagen_titulo"
+                (click)="abrirDialogo()"></div>
+            <article *ngFor="let item of misDatosBd" class="article">
+              <div id="texto">
+                <div>
+                    <em><strong>{{item.habilidades}}</strong></em>
+                </div><br>
+                <div id="progreso">
+                    <mat-progress-bar value={{item.porcentaje}}></mat-progress-bar><br>
+                </div>
+              </div>
+                <div class="botones">
+                    <img class="imagen_botones" [src]="misDatos.imagenes.editar" (click)="abrirDialogoEditar(item.idHabilidades,item.habilidades, item.porcentaje)">
+                    <img class="imagen_botones" [src]="misDatos.imagenes.eliminar" (click)="eliminarHabilidades(item.idHabilidades)">
+                </div>
+            </article>           
+            
+        </div>
+    </div>
+    </body>
+
+

@@ -1,0 +1,21 @@
+<mat-form-field>
+    <input matInput [(ngModel)]="data.nombreProyecto" placeholder="Nombre del Proyecto" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.fecha" placeholder="Fecha" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.tecnologia" placeholder="Tecnologías" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.comentarios" placeholder="Comentarios" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.url" placeholder="URL" type="text" required>
+</mat-form-field><br>
+
+<br>
+    <div mat-dialog-actions>
+        <button mat-button (click)="cancelar()">Cancelar</button>
+        <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Confirmar</button>
+    </div>

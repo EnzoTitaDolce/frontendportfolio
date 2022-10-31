@@ -1,0 +1,33 @@
+{
+    "name":"Enzo Tita Dolce",
+    "nacimiento":{       
+            "lugar":"Salta Capital, Salta, Argentina",
+            "fecha":"2 de febrero de 1989"
+        },
+    "titulo1":"Técnico Universitario en Física",
+    "titulo2":"Programador PHP y MySql",
+    "residencia":"Túcuman, Argentina",
+    "cargo":"Auxiliar Docente",
+    "estudiosPyS": {
+        "primarios":"Col. Ntra. Sra. María del Pilar",
+        "secundarios":"Bachillerato Integral 'Raúl Scalabrini Ortiz'"
+    },
+    "intereses":[
+        "Robótica","Programación","Física","Ciencias en gral","Docencia","Divulgación"
+    ],
+    "contacto":{
+        "facebook":"Giancarlo Dolche",
+        "instagram":"enzo.titadolce",
+        "whatsapp":"+5493816121337"
+    },
+    "imagenes":{
+        "eliminar":"https://i.postimg.cc/TYcjq4n4/borrar.png",
+        "editar":"https://i.postimg.cc/BnQThBgQ/editar.png",
+        "perfil":"https://i.postimg.cc/G3ftS93J/perfil.jpg",
+        "portada":"./assets/img/portada.jpg",
+        "facebook":"https://i.postimg.cc/zGtn4Htw/face-logo.png",
+        "instagram":"https://i.postimg.cc/SKnW4Q3B/instagram.png",
+        "whatsapp":"https://i.postimg.cc/SxYmWwM6/whatsapp.png",
+        "agregar":"https://i.postimg.cc/4NGbcgHc/agregar.png"}
+    
+}

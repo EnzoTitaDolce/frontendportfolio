@@ -1,0 +1,39 @@
+<body>
+    <main class="container-fluid">
+        <div id="principal" class="row" *ngIf="misDatos">
+            <section id="enlaces" class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <article>
+                    <p>
+                        <a href="https://api.whatsapp.com/send?phone=5493816121337&text=Hola!%20deseo%20comunicarme%20contigo.%20Muchas%20gracias.%20">
+                            Whatsapp <img [src]="misDatos.imagenes.whatsapp">
+                        </a>
+                    </p>
+                    <div class="botones">
+                        <img class="imagen_botones" [src]="misDatos.imagenes.editar">
+                        <img class="imagen_botones" [src]="misDatos.imagenes.eliminar">
+                    </div>
+                </article>
+                <article>
+                    <p>
+                        <a href="http://www.instagram.com/enzo.titadolce">Instagram <img [src]="misDatos.imagenes.instagram">
+                        </a>
+                    </p>
+                    <div class="botones">
+                        <img class="imagen_botones" [src]="misDatos.imagenes.editar">
+                        <img class="imagen_botones" [src]="misDatos.imagenes.eliminar">
+                    </div>
+                </article>
+                <article>
+                    <p>
+                        <a href="www.facebook.com">Facebook <img [src]="misDatos.imagenes.facebook">
+                        </a>
+                    </p>
+                    <div class="botones">
+                        <img class="imagen_botones" [src]="misDatos.imagenes.editar">
+                        <img class="imagen_botones" [src]="misDatos.imagenes.eliminar">
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+</body>
