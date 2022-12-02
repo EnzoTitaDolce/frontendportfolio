@@ -20,10 +20,10 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
-<<<<<<< HEAD
+
     "@types/angular": "^1.8.4",
-=======
->>>>>>> 5bc927cce058619ba911bb799d7f2c9ef1f75139
+
+
     "ngx-infinite-scroll": "^14.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
