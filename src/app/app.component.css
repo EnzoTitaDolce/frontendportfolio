@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    border:0;
+    padding:0;
+}
+body{
+    background-color:rgb(0,92,134);
+    min-height: 100vh;
+    height: auto;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(to right, rgb(1,146,209), rgb(0,92,134));
+    margin:-2;
+    width:auto;
+    border-radius:10px;
+    padding:0.3rem;
+}
+header a{
+    color:white;
+    text-decoration: none;
+}
+header a img:hover{
+    background-color: white;
+    border-radius:50%;
+}
+#redes img{
+    width:3vw;
+    height: 7vh;    
+}
+#encabezado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+#encabezado img{
+    width:15vw;
+    height: 7vh;
+}
+
+#portada{
+    background: url('https://i.postimg.cc/9MjHs5Rp/portada-alternativa.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:white;
+    padding-left: 1rem;
+    display:flex;
+    flex-direction: row;
+    width:auto;
+    border-radius:10px;
+    margin-top:1rem;
+}
+#portada img{
+    width: 40%;
+}
+#principal{
+    width:99vw;
+    border:1px blue solid;
+}
+#datosPersonales{    
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+#datosPersonales p{
+    font-weight: bolder;
+}
+#datosPersonales p:first-child{
+    margin-top: 1rem;
+}
+#perfil_foto img{
+    margin: 0.5rem 0rem 0.5rem 3rem;
+    
+    border-radius: 90px;
+}
+#lista ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#lista ul li{
+    margin-top: 1.5vh;
+    background-color: blue;  
+    border-radius: 0.3rem;
+    width: 18vw;
+    text-align: center;
+}
+#lista ul li:last-child{
+    margin-bottom: 0.6rem;
+}
+#lista ul li a{  
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color:white;    
+}
+#lista ul li a:hover{
+    color:blue;
+}
+#lista ul li:hover{
+    background-color: white;
+    color:blue;
+}
+#vistas{   
+    padding-top:1rem;
+    margin-left: 2rem;
+    width:95%;
+    margin-right: auto;
+}

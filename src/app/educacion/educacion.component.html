@@ -1,0 +1,20 @@
+<body>
+    <div id="principal" class="row">
+        
+        <div id="contenido" class="col-xl-12 col-lg-12 col-md-12 col-sm-12" *ngIf="misDatos!=null else cargando">
+            <div class="titulo" id="titulo"><h2>Educación</h2><img [src]="misDatos.imagenes.agregar" class="imagen_titulo" (click)="abrirDialogo()"></div>
+            <article *ngFor="let item of misDatosBd" class="article">
+                <div>
+                <em><strong>{{item.carrera}}</strong></em><br>
+                {{item.institucion}}<br>
+                {{item.anioInicio}}-{{item.anioFin}}<br>
+                </div>
+                <div class="botones">
+                    <img class="imagen_botones" [src]="misDatos.imagenes.editar" (click)="abrirDialogoEditar(item.id,item.carrera,item.institucion,item.anioFin, item.anioInicio, item.nivel)">
+                    <img class="imagen_botones" [src]="misDatos.imagenes.eliminar" (click)="eliminarEducacion(item.id)">
+                </div>
+            </article>
+        </div>
+        <ng-template #cargando> <h1>Buscando datos...</h1></ng-template>
+    </div>
+    </body>

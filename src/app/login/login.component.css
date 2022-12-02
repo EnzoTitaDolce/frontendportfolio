@@ -1,0 +1,16 @@
+body{    
+    background-color:rgb(0,92,134);
+    color:white;
+}
+.contenido{
+    padding:0.5rem 2rem;
+    color:white;
+    border-radius:1rem;
+    box-shadow: 1px 1px 10px 1px rgb(0, 44, 65);
+    background-color: rgb(124, 122, 122);
+    width:50%;
+    margin-left: 25%;
+}
+h1{
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+<body>
+    <p *ngIf="misDatos==null"> Cargando </p>
+    
+    <div id="principal" class="row" *ngIf="misDatos">
+        <ng-template #cargando></ng-template>    
+        <div id="contenido" class="col-xl-12 col-lg-12 col-md-12 col-sm-12" >
+            <div class="titulo"><h2>Proyectos</h2> <img [src]="misDatos.imagenes.agregar" class="imagen_titulo" (click)="abrirDialogo()"></div>
+            <article *ngFor="let item of misDatosBd" class="article">
+                <div>
+                    <em><strong>{{item.nombreProyecto}}</strong></em><br>
+                    {{item.fecha}}<br>
+                    {{item.comentarios}}<br>
+                    {{item.tecnologia}}<br>
+                    <div *ngIf="item.url">
+                        <a href={{item.url}}>{{item.url}}</a>
+                    </div>
+                </div>
+                <div class="botones">
+                    <img class="imagen_botones" [src]="misDatos.imagenes.editar" (click)="abrirDialogoEditar(item.id,item.nombreProyecto,item.fecha,item.tecnologia, item.comentarios, item.url)">
+                    <img class="imagen_botones" [src]="misDatos.imagenes.eliminar" (click)="eliminarProyectos(item.id)">
+                </div>
+            </article>           
+        </div>        
+    </div>
+
+    </body>

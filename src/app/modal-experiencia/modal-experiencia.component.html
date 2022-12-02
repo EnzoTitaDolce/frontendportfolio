@@ -1,0 +1,22 @@
+
+<mat-form-field>
+    <input matInput [(ngModel)]="data.nombreEmpresa" placeholder="Nombre de la empresa" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.descripcion" placeholder="Descripción de su trabajo" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.fechaInicio" placeholder="Fecha de inicio del trabajo" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.fechaFin" placeholder="Fecha de finalización del trabajo" type="text" required>
+</mat-form-field><br>
+
+   <label>Trabajo Actual </label> <input type="checkbox" [(ngModel)]="data.trabajoActual">
+
+<br>
+    <div mat-dialog-actions>
+        <button mat-button (click)="cancelar()">Cancelar</button>
+        <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Confirmar</button>
+    </div>
+

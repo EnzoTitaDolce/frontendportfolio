@@ -1,0 +1,21 @@
+<mat-form-field>
+    <input matInput [(ngModel)]="data.institucion" placeholder="Institución" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.carrera" placeholder="Carrera" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.nivel" placeholder="Nivel" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.anioInicio" placeholder="Año de inicio" type="text" required>
+</mat-form-field><br>
+<mat-form-field>
+    <input matInput [(ngModel)]="data.anioFin" placeholder="Año de finalización" type="text" required>
+</mat-form-field><br>
+<br>
+    <div mat-dialog-actions>
+        <button mat-button (click)="cancelar()">Cancelar</button>
+        <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Confirmar</button>
+    </div>
+

@@ -1,0 +1,39 @@
+body{
+    /*border:1px solid black;*/
+    border-radius:1rem;
+    box-shadow: 1px 1px 10px 1px rgb(0,44,65);
+    background-color: rgb(124, 122, 122);
+    color:white;
+}
+#contenido{
+    padding:0.5rem 2rem;
+    color:white;
+}
+#principal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+#botones{
+    display:flex;
+    flex-direction: column;
+}
+
+.article{
+    display:flex;
+    flex-direction: row;    
+    width:90vw;
+    justify-content: space-evenly;
+    
+}
+.experiencia{
+    display:flex;
+    flex-direction: column;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:10%;
+}
