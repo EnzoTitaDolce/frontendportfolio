@@ -18,7 +18,10 @@ const cabecera={headers: new HttpHeaders({'Content-Type': 'application/json'})};
   providedIn: 'root'
 })
 export class AuthService {
+
   private authUrl='https://backendportfolio-production-49b4.up.railway.app/api/auth/login';
+
+
 
                
 

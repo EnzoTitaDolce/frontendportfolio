@@ -8,7 +8,9 @@ export class EliminarService {
 
 
   constructor(private http:HttpClient) {}
+
   private url="https://backendportfolio-production-49b4.up.railway.app/"
+
 
 
     eliminarExperiencia(id:number):Observable<any>{

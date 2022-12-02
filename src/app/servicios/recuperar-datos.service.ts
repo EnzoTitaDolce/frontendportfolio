@@ -9,9 +9,9 @@ import { HttpClient } from '@angular/common/http';
 export class RecuperarDatosService {
 
   constructor(private http:HttpClient) { }
+
   private url="https://backendportfolio-production-49b4.up.railway.app/"
 
-               
   getPersonas():Observable<any>{
     
     return this.http.get(this.url+'personas/traer');    

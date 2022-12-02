@@ -9,6 +9,7 @@ export class EditarService {
 
   constructor(private http:HttpClient) { }
 
+
   private url="https://backendportfolio-production-49b4.up.railway.app/"
 
 
